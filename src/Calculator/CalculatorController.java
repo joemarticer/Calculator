@@ -54,6 +54,7 @@ public class CalculatorController implements Initializable {
 			NumberFormat format = DecimalFormat.getInstance();
 			format.setRoundingMode(RoundingMode.FLOOR);
 			format.setMinimumFractionDigits(0);
+			format.setMaximumFractionDigits(10);
 			erg.setText(format.format(cs.readString(texto.getText())));
 		} catch (MathematischerFehlerException | EingabefehlerException e) {
 			popup.setVisible(true);
