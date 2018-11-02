@@ -107,15 +107,16 @@ public class Calculatorsub {
 					klammer = false;
 					komma = false;
 					letztesZeichenOperation = true;
-				} else if (c == '-') {
-					klammer = false;
-					komma = false;
-					if (letztesZeichenOperation) {
-						zahlen.push(zahlen.pop() * (-1));
-					} else {
-						operationen.push(c);
-						letztesZeichenOperation = true;
-					}
+//
+//					} else if (c == '-') {
+//					klammer = false;
+//					komma = false;
+//					if (letztesZeichenOperation) {
+//						zahlen.push(string.charAt(j + 1) * (-1));
+//					} else {
+//						operationen.push(c);
+//						letztesZeichenOperation = true;
+//					}
 				} else if (c == '.') {
 					komma = true;
 					letztesZeichenOperation = false;
@@ -123,6 +124,8 @@ public class Calculatorsub {
 					operationen.push(c);
 					klammer = true;
 					komma = false;
+					letztesZeichenOperation = true;
+
 				} else if (c == ')') {
 					boolean klammerEntfernt = false;
 					if (!operationen.isEmpty()) {
