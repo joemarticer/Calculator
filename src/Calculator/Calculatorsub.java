@@ -68,6 +68,7 @@ public class Calculatorsub {
 		boolean klammer = false;
 		boolean letztesZeichenZahl = false;
 		boolean komma = false;
+		boolean letztesZeichenOperation = false;
 		for (int j = 0; j < string.length(); j++) {
 			char c = string.toCharArray()[j];
 			try {
@@ -105,8 +106,19 @@ public class Calculatorsub {
 					operationen.push(c);
 					klammer = false;
 					komma = false;
+					letztesZeichenOperation = true;
+				} else if (c == '-') {
+					klammer = false;
+					komma = false;
+					if (letztesZeichenOperation) {
+						zahlen.push(zahlen.pop() * (-1));
+					} else {
+						operationen.push(c);
+						letztesZeichenOperation = true;
+					}
 				} else if (c == '.') {
 					komma = true;
+					letztesZeichenOperation = false;
 				} else if (c == '(') {
 					operationen.push(c);
 					klammer = true;
