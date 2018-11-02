@@ -11,7 +11,7 @@ import org.junit.Test;
 public class Calculatertest {
 
 	@Test
-	public void values() throws MathematischerFehlerException, EingabefehlerException {
+	public void values() throws MathematischerFehlerException, EingabefehlerException, NotImplementedException {
 		FileReader fr;
 		try {
 			fr = new FileReader("Testbeispiele.txt");

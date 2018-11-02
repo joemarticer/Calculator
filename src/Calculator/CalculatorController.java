@@ -56,7 +56,7 @@ public class CalculatorController implements Initializable {
 			format.setMinimumFractionDigits(0);
 			format.setMaximumFractionDigits(10);
 			erg.setText(format.format(cs.readString(texto.getText())));
-		} catch (MathematischerFehlerException | EingabefehlerException e) {
+		} catch (MathematischerFehlerException | EingabefehlerException | NotImplementedException e) {
 			popup.setVisible(true);
 			pop.setText(e.getMessage());
 			popup.setStyle("-fx-background-color: #F5F5F5 ; -fx-border-style: solid; -fx-border-color: #039ED3");

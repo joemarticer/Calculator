@@ -61,7 +61,8 @@ public class Calculatorsub {
 		return ergebnis;
 	}
 
-	public Double readString(final String string) throws MathematischerFehlerException, EingabefehlerException {
+	public Double readString(final String string)
+			throws MathematischerFehlerException, EingabefehlerException, NotImplementedException {
 		Stack<Double> zahlen = new Stack<>();
 		Stack<Character> operationen = new Stack<>();
 		List<Integer> nachKomma = new ArrayList<>();
@@ -102,7 +103,8 @@ public class Calculatorsub {
 			} catch (NumberFormatException e) {
 				letztesZeichenZahl = false;
 
-				if (c == '+' || c == '-' || c == '/' || c == '*' || c == '%' || c == '^') {
+				if ((c == '+' || c == '-' || c == '/' || c == '*' || c == '%' || c == '^')
+						&& !Character.isDigit(string.charAt(j + 1))) {
 					operationen.push(c);
 					klammer = false;
 					komma = false;
@@ -157,6 +159,8 @@ public class Calculatorsub {
 							operationen.pop();
 						}
 					}
+				} else {
+					throw new NotImplementedException();
 				}
 
 			}
