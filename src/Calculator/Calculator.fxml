@@ -25,20 +25,20 @@
             <Button layoutX="159.0" layoutY="335.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="51.0" prefWidth="56.0" text=")" />
             <Button layoutX="94.0" layoutY="139.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="51.0" prefWidth="56.0" text="8" />
             <Button layoutX="159.0" layoutY="139.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="51.0" prefWidth="56.0" text="9" />
-            <Button layoutX="268.0" layoutY="134.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="61.0" prefWidth="64.0" text="+" />
-            <Button layoutX="356.0" layoutY="207.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="61.0" prefWidth="64.0" text="/" />
-            <Button layoutX="268.0" layoutY="207.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="61.0" prefWidth="64.0" text="*" />
-            <Button layoutX="356.0" layoutY="134.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="61.0" prefWidth="64.0" text="-" />
-            <Button layoutX="471.0" layoutY="134.0" mnemonicParsing="false" onAction="#rechner" prefHeight="61.0" prefWidth="64.0" text="=" />
-            <Button layoutX="268.0" layoutY="285.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="61.0" prefWidth="64.0" text="\%" />
+            <Button layoutX="390.0" layoutY="160.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="61.0" prefWidth="64.0" text="+" />
+            <Button layoutX="471.0" layoutY="242.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="61.0" prefWidth="64.0" text="/" />
+            <Button layoutX="390.0" layoutY="242.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="61.0" prefWidth="64.0" text="*" />
+            <Button layoutX="471.0" layoutY="160.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="61.0" prefWidth="64.0" text="-" />
+            <Button layoutX="268.0" layoutY="242.0" mnemonicParsing="false" onAction="#rechner" prefHeight="61.0" prefWidth="64.0" text="=" />
+            <Button layoutX="390.0" layoutY="323.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="61.0" prefWidth="64.0" text="\%" />
             <TextField fx:id="texto" cache="true" depthTest="DISABLE" editable="false" layoutX="94.0" layoutY="37.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="441.0">
                <effect>
                   <Blend />
                </effect></TextField>
             <TextField fx:id="erg" editable="false" layoutX="372.0" layoutY="84.0" prefHeight="25.0" prefWidth="163.0" />
-            <Button layoutX="471.0" layoutY="352.0" mnemonicParsing="false" onAction="#löschen" prefHeight="34.0" prefWidth="64.0" text="Reset " />
-            <Button layoutX="471.0" layoutY="299.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="34.0" prefWidth="64.0" text="." />
-            <Button layoutX="356.0" layoutY="285.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="61.0" prefWidth="64.0" text="^" />
+            <Button layoutX="268.0" layoutY="173.0" mnemonicParsing="false" onAction="#löschen" prefHeight="34.0" prefWidth="64.0" text="Reset " />
+            <Button layoutX="268.0" layoutY="337.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="34.0" prefWidth="64.0" text="." />
+            <Button layoutX="471.0" layoutY="323.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="61.0" prefWidth="64.0" text="^" />
             <Pane fx:id="popup" layoutX="165.0" layoutY="190.0" prefHeight="34.0" prefWidth="270.0" visible="false">
                <children>
                   <Button layoutX="224.0" layoutY="5.0" mnemonicParsing="false" onAction="#okClick" text="Ok" />
