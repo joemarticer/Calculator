@@ -69,7 +69,7 @@ public class Calculatorsub {
 		boolean klammer = false;
 		boolean letztesZeichenZahl = false;
 		boolean komma = false;
-		boolean letztesZeichenOperation = false;
+//		boolean letztesZeichenOperation = false;
 		for (int j = 0; j < string.length(); j++) {
 			char c = string.toCharArray()[j];
 			try {
@@ -108,7 +108,7 @@ public class Calculatorsub {
 					operationen.push(c);
 					klammer = false;
 					komma = false;
-					letztesZeichenOperation = true;
+//					letztesZeichenOperation = true;
 //
 //					} else if (c == '-') {
 //					klammer = false;
@@ -121,12 +121,12 @@ public class Calculatorsub {
 //					}
 				} else if (c == '.') {
 					komma = true;
-					letztesZeichenOperation = false;
+//					letztesZeichenOperation = false;
 				} else if (c == '(') {
 					operationen.push(c);
 					klammer = true;
 					komma = false;
-					letztesZeichenOperation = true;
+//					letztesZeichenOperation = true;
 
 				} else if (c == ')') {
 					boolean klammerEntfernt = false;
