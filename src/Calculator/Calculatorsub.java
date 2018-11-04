@@ -103,8 +103,8 @@ public class Calculatorsub {
 			} catch (NumberFormatException e) {
 				letztesZeichenZahl = false;
 
-				if ((c == '+' || c == '-' || c == '/' || c == '*' || c == '%' || c == '^')
-						&& !Character.isDigit(string.charAt(j + 1))) {
+				if (c == '+' || c == '-' || c == '/' || c == '*' || c == '%' || c == '^')
+						 {
 					operationen.push(c);
 					klammer = false;
 					komma = false;
