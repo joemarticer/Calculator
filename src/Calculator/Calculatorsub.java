@@ -126,7 +126,7 @@ public class Calculatorsub {
 					operationen.push(c);
 					klammer = true;
 					komma = false;
-//					letztesZeichenOperation = true;
+//	g				letztesZeichenOperation = true;
 
 				} else if (c == ')') {
 					boolean klammerEntfernt = false;
